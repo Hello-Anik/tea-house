@@ -10,23 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+            .manrope{
+    font-family: "Manrope", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    }
+        .roboto{
+    font-family: "Roboto", serif;
+    }
+    </style>
 </head>
-<body>
+<body class="roboto manrope">
     <header class="">
 
     </header>
     <main class="max-w-screen-xl mx-auto lg:px-28">
         <!--main content-->
-        <header class="flex justify-between pt-10 mb-20">
-            <div>
-                <h2>It's good 
+        <header class="flex pt-10 mb-20 md:pl-4">
+            <div class="space-y-4">
+                <h2 class="manrope text-7xl items-center font-extrabold">It's good <br>
                     tea time at The Tea House</h2>
-                    <p>It's good 
-                        tea time at The Tea House</p>
-                        <button>Explore More</button>
+                    <p class="text-[#777777] font-medium">Tea and Botanical Solutions Supplier Give Optimum <br>Satisfaction To Your Taste Buds.</p>
+                        <button class=" text-lg text-white font-bold px-5 py-3 rounded-lg bg-gradient-to-r from-[#FF8938] to-[#FF0000] ...">Explore More   <i class="fa-solid fa-arrow-right -rotate-45 "></i></button>
             </div>
             <div>
+               <div class="relative">
                 <img src="./images/banner.png" alt="">
+               </div>
+                <div class="absolute flex shadow-lg items-center py-2 px-2 lg:py-4 md:px-10 rounded-lg lg:-mt-28 bg-white md:-mt-20">
+                    <div>
+                        <i class="fa-solid fa-star text-yellow-300 text-4xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <h2 class="font-extrabold lg:text-3xl">5.00</h2>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
             </div>
 
         </header>
